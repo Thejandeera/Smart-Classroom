@@ -9,8 +9,8 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleSignupNavigation = (event) => {
-    event.preventDefault(); // Prevent the default link behavior
-    navigate('/signup'); // Navigate to the signup page
+    event.preventDefault(); 
+    navigate('/signup'); 
   };
 
   const handleLogin = (event) => {
@@ -25,7 +25,7 @@ const Login = () => {
     // Here you would typically handle authentication logic
     // For now, we just navigate to the home page
     toast.success('Signup successful');
-    navigate('/');
+    navigate('/home');
     
   };
 

@@ -13,7 +13,7 @@ const Signup = () => {
 
   const handleLoginNavigation = (event) => {
     event.preventDefault();
-    navigate('/login');
+    navigate('/');
   };
 
   const handleSignup = (event) => {
@@ -32,7 +32,7 @@ const Signup = () => {
     // Here you would typically handle signup logic
     // For now, we just navigate to the home page
     toast.success('Signup successful');
-    navigate('/');
+    navigate('/home');
   };
 
   return (

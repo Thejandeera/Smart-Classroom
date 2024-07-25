@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
 
 
 const Home = () => {
@@ -8,7 +9,8 @@ const Home = () => {
 
     const handleLoginNavigation = (event) => {
       event.preventDefault(); // Prevent the default link behavior
-      navigate('/login'); // Navigate to the login page
+      toast.success('Logout successful');
+      navigate('/'); // Navigate to the login page
     };
 
   return (
