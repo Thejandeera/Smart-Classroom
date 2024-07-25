@@ -1,13 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css'
+import { Toaster } from 'react-hot-toast'; // Import Toaster component
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <BrowserRouter>
-    <App />
+    <BrowserRouter>
+      <App />
+      <Toaster /> {/* Include the Toaster component */}
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
